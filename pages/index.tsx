@@ -30,7 +30,7 @@ export default function IndexPage({products, mainMenu, footerMenu, basicSettings
 		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu} basicSettings={basicSettings}>
 			<div className='container-xxl'>
 				<MainPageSlider />
-				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Boundless store</h1>
+				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Canyfix store</h1>
 				<ProductsList
 					products={products}
 					className={'page-block'}
@@ -59,11 +59,13 @@ export default function IndexPage({products, mainMenu, footerMenu, basicSettings
 				className={'page-block'}
 			/>
 			<div className='container-xxl'>
+				{/* 
+				# TODO Commented
 				<ProductsSliderByQuery
 					query={{collection: ['main-page'], sort: 'in_collection'}}
 					title={'Special offers:'}
 					wrapperClassName='page-block'
-				/>
+				/> */}
 				<div className={'page-block'}>
 					<h2 className={'text-center mb-4'}>Our customers love us:</h2>
 					<Reviews
@@ -145,7 +147,7 @@ function 	MainPageSlider() {
 			// pagination='progressbar'
 			size={'large'}
 			slides={slides}
-			className={'mb-4'}
+			className={'mb-6'}
 		/>
 	);
 }

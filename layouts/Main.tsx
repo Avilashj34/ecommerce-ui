@@ -46,12 +46,12 @@ export default function MainLayout({children, title, metaData, mainMenu, footerM
 				<meta name='theme-color' content='#ffffff' />
 
 				<meta property='og:type' content='website' />
-				<meta property='og:title' content={title || 'Boundless-Commerce Shop Example'} />
+				<meta property='og:title' content={title || 'Canyfix Only Mobile Repairing Store Repair, Buy, Sell Iphones at best price'} />
 				<meta property='og:url' content={canonicalUrl || shopBaseUrl} />
 				<meta property='og:image' content={imgUrl || (shopBaseUrl + '/og.jpeg')} />
 				{description && <meta property='og:description' content={description} />}
 
-				<title>{title || 'Boundless-Commerce Shop Example'}</title>
+				<title>{title || 'Canyfix Only Mobile Repairing Store Repair, Buy, Sell Iphones at best price'}</title>
 
 				<link rel='preconnect' href={process.env.BOUNDLESS_API_BASE_URL || 'https://api.boundless-commerce.com'} crossOrigin={'use-credentials'} />
 				{noIndex && <meta name='robots' content='noindex' />}
@@ -60,11 +60,11 @@ export default function MainLayout({children, title, metaData, mainMenu, footerM
 			<div className={clsx('page-layout page-layout_main mars-full-theme', {'page-layout_aside-opened': asideIsOpened})}>
 				<CallToOrder />
 				<Header />
-				{mainMenu && <HorizontalMenu menuList={mainMenu} />}
+				{/* {mainMenu && <HorizontalMenu menuList={mainMenu} />} */}
 				<main className='page-layout__main'>
 					{children}
 				</main>
-				<Footer menuList={footerMenu}/>
+				<Footer menuList={footerMenu} companyTitle='@ Canyfix LLC'/>
 				<AsideBackdrop />
 			</div>
 			<AsideMenu menuList={mainMenu}/>

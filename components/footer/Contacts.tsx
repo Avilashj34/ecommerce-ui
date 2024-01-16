@@ -11,19 +11,19 @@ export default function FooterContacts() {
 				<span className='icon'>
 					<FontAwesomeIcon icon={faWhatsapp}/>
 				</span>
-				<a className='link' href='tel:+18001234567'>+1 (800) 123-45-67</a>
+				<a className='link' href='tel:+917888014442'>+91 (788) 801-44-42</a>
 			</p>
 			<p className='page-footer__icon-w-link'>
 				<span className='icon'>
 					<FontAwesomeIcon icon={faMapMarkerAlt}/>
 				</span>
-				<a className='link' href='#'>1 infinite loop, Cupertino, CA 95014</a>
+				<a className='link' href='#'>Kalyan West, 421301</a>
 			</p>
 			<p className='page-footer__icon-w-link'>
 				<span className='icon'>
 					<FontAwesomeIcon icon={faClock}/>
 				</span>
-				9:00am &mdash; 6:00pm
+				12:00am &mdash; 9:00pm
 			</p>
 		</>
 	);
