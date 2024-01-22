@@ -32,14 +32,17 @@ export default function MarsLogoRow() {
 				</div>
 				<div className={'mars-logo-row__at-right'}>
 					<HeaderCart icon={<span className={'mars-logo-row__cart-icon'}><FontAwesomeIcon icon={faShoppingCart} /></span>}/>
+					
 					<button type={'button'}
 									className={'hamburger-btn mars-logo-row__hamburger'}
 									onClick={onHamburgerBtnClicked}
 									>
+										
 						<span className={clsx('hamburger-btn__bar', {'first-opened': asideIsOpened})} />
 						<span className={clsx('hamburger-btn__bar', {'middle-opened': asideIsOpened})} />
 						<span className={clsx('hamburger-btn__bar', {'last-opened': asideIsOpened})} />
 					</button>
+					
 				</div>
 			</div>
 		</section>

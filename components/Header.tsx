@@ -15,6 +15,7 @@ export default function Header() {
 		<header className='page-header'>
 			<MarsTopNav />
 			<MarsLogoRow />
+			<div>Here we are</div>
 			{/*<div className='container'>*/}
 			{/*	<div className='page-header__content'>*/}
 			{/*		<div className='page-header__logo'>*/}
